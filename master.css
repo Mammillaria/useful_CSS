@@ -1,0 +1,113 @@
+ /*Use this master stylesheet to clear out the default browser
+ /*settings that can cause cross-browser problems*/ to do so call this
+ /*styleseet first in all your documents*/ @author Olya Tovashova
+ /*8/1/2016*/
+
+ /*Global Defaults - zero out margins, padding and borders on the page*/      
+ html, body{ 
+   margin:0px;     
+   padding:0px;     
+   border: 0px;} 
+
+ /*Make sure the font is consistent across browsers. Use font families
+ /*standard for both Win and Mac. Set font size to 100% or 1em so the
+ /*page is  accessible but te size is consistent. Include the line-height*/
+
+ body{
+ 	font: 1em/1.25 Arial, Helvetica, sans-serif;
+ }
+
+/*Headline typically default to bold text with large margins/padding.
+/*Clear the weight, margins, padding to ensure the tags remain
+/*larger/smaller than surrounding text*/
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*resert table cell ags and form tags. Set them to same size as your
+/*body and paragraph text*/
+
+p, th, td, li, dd, dt, ul, ol, blockquote, q, acronym, abbr, a, input,
+select, textarea{
+	margin: 0;
+	padding: 0;
+	font: normal normal  normal 1em/1.25 Arial Helvetica sans-serif; }
+
+/*Give some extra style to quotations, acronyms and abbreviations to
+/*make them stand out*/
+
+blockquote{
+	margin: 1.25em;
+	padding: 1.25em;
+}
+q{
+	font-style: italic;
+}
+acronym, abbr{
+	cursor: help;
+	border-bottom: 1px dashed;
+}
+
+/*Define a size for your SMALL and BIG tags*/
+small{
+	font-size: .85em;
+}
+big{
+	font-size: 1.2em;
+}
+
+/*Choose a style for links - underlined or not*/ 
+a,a:link, a:visited, a:active, a:hover{     
+  text-decoration: none; }
+
+/*turn off borders for images. Most browsers dont display borders, but
+/*when the image islinked, the browsers turn on the border*/
+img{
+	border: none;
+}
+
+/*table formatting*/
+table{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/*clear out the margin and paddigs around the form(s). rewrite the
+/*form tag as inline so it does not add extra space where you place
+/*the tag in the code*/
+
+form{
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+/*Change cursor for labels*/
+
+label{
+	cursor: pointer;
+}
+
+/*These COMMON CLASSES can be overridden with more specific styles*/
+
+.clear{clear: both;}
+.floatLeft{float: left;}
+.floatRight{float:right;}
+.textLeft{text-align: left;}
+.textRight{text-align: right;}
+.tetxCenter{text-align: center;}
+.textJustify{text-align: justify;}
+.blockCenter{display: block;margin-left: auto;margin-right: auto;} /*remember to set width*/
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
+.underline{text-decoration: underline;}
+.noindent{margin-left: 0; padding-left: 0;}
+.nomargin{margin: 0;}
+.nopadding{padding:0;}
+.nobullet{list-style: none;list-style-image: none;}
+
